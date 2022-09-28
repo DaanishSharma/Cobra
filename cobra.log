@@ -1,0 +1,448 @@
+[2022-07-18 16:59:47,389] INFO [774] Start 127.0.0.1:8888
+[2022-07-18 16:59:56,620] CRITICAL [73] ./configs file configure failed. http://cobra.feei.cn/config
+Error: No section: 'cobra'
+[2022-07-18 17:00:02,157] INFO [809] API Server start success
+[2022-07-18 17:00:02,158] INFO [112] [INIT] Done! Consume Time:14.768930196762085s
+[2022-07-18 17:00:11,441] INFO [774] Start 127.0.0.1:8888
+[2022-07-18 17:00:12,983] INFO [64] [REPORT] Report URL: ?sid=aa0fcfnuqjhu
+[2022-07-18 17:00:12,985] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:00:14,553] INFO [427] [PICKUP] [CLONE] Cloning into '/tmp/cobra/git/DaanishSharma/DSA'...
+[2022-07-18 17:00:14,554] INFO [431] [PICKUP] [CLONE] clone done. Switching to branch main
+[2022-07-18 17:00:15,784] INFO [493] [PICKUP] [CHECKOUT] Already on 'main'
+[2022-07-18 17:00:15,787] INFO [75] [CLI] Target directory: /tmp/cobra/git/DaanishSharma/DSA
+[2022-07-18 17:00:15,800] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:00:15,800] INFO [85] [CLI] [STATISTIC] Language: c++ Framework: Unknown Framework
+[2022-07-18 17:00:15,801] INFO [88] [CLI] [STATISTIC] Files: 45, Extensions:7, Consume: 0.004764999999999998
+[2022-07-18 17:00:17,238] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:00:17,996] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:00:18,205] INFO [241] [SCAN] Not found vulnerability!
+[2022-07-18 17:02:46,787] INFO [64] [REPORT] Report URL: ?sid=aa0fcf4o3sub
+[2022-07-18 17:02:46,789] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:02:46,789] INFO [401] [PICKUP] [CLONE] repository already exist.
+[2022-07-18 17:02:46,790] INFO [355] [PICKUP] [PULL] pull repository...
+[2022-07-18 17:02:48,242] INFO [493] [PICKUP] [CHECKOUT] Already on 'main'
+[2022-07-18 17:02:49,498] INFO [379] [PICKUP] [PULL] Already up to date.
+[2022-07-18 17:02:49,499] INFO [380] [PICKUP] [PULL] From https://github.com/DaanishSharma/DSA > * branch            main       -> FETCH_HEAD
+[2022-07-18 17:02:49,500] INFO [390] [PICKUP] [PULL] pull done.
+[2022-07-18 17:02:49,500] INFO [75] [CLI] Target directory: /tmp/cobra/git/DaanishSharma/DSA
+[2022-07-18 17:02:49,512] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:02:49,512] INFO [85] [CLI] [STATISTIC] Language: c++ Framework: Unknown Framework
+[2022-07-18 17:02:49,512] INFO [88] [CLI] [STATISTIC] Files: 45, Extensions:7, Consume: 0.004705999999999998
+[2022-07-18 17:02:50,970] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:02:51,721] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:02:51,932] INFO [241] [SCAN] Not found vulnerability!
+[2022-07-18 17:04:43,958] INFO [809] API Server start success
+[2022-07-18 17:04:43,959] INFO [112] [INIT] Done! Consume Time:272.51850628852844s
+[2022-07-18 17:04:45,294] INFO [774] Start 127.0.0.1:8888
+[2022-07-18 17:04:54,782] INFO [64] [REPORT] Report URL: ?sid=aeb7ac1f27vh
+[2022-07-18 17:04:54,784] INFO [194] target<<<<->>>>: https://github.com/Ishan-sharma8/Movie-website
+[2022-07-18 17:04:54,784] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:04:54,784] INFO [417] git clone https://github.com/Ishan-sharma8/Movie-website "/tmp/cobra/git/Ishan-sharma8/Movie-website" -b main
+[2022-07-18 17:04:56,296] INFO [427] [PICKUP] [CLONE] Cloning into '/tmp/cobra/git/Ishan-sharma8/Movie-website'...
+[2022-07-18 17:04:56,297] INFO [431] [PICKUP] [CLONE] clone done. Switching to branch main
+[2022-07-18 17:04:57,211] INFO [493] [PICKUP] [CHECKOUT] Already on 'main'
+[2022-07-18 17:04:57,213] INFO [203] Clone Successful !
+[2022-07-18 17:04:57,213] INFO [75] [CLI] Target directory: /tmp/cobra/git/Ishan-sharma8/Movie-website
+[2022-07-18 17:04:57,231] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:04:57,231] INFO [85] [CLI] [STATISTIC] Language: css Framework: Unknown Framework
+[2022-07-18 17:04:57,232] INFO [88] [CLI] [STATISTIC] Files: 44, Extensions:6, Consume: 0.006485000000000001
+[2022-07-18 17:04:58,694] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:04:59,455] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:04:59,662] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 1/65/29 Vulnerabilities (1)
++---+--------+-----------------+-------+--------------+----------------------------------------------------+
+| # | CVI    | Rule            | Level | Target       | Source Code Content                                |
++---+--------+-----------------+-------+--------------+----------------------------------------------------+
+| 1 | 130002 | 硬编码Token/Key | L-02  | /script.js:3 | const API_KEY = 'api_key=1cf50e6248dc270629e802686 |
++---+--------+-----------------+-------+--------------+----------------------------------------------------+
+[2022-07-18 17:04:59,662] INFO [245] [SCAN] Not Trigger Rules (65): 110003,190007,120004,165001,170002,360029,360021,120002,360035,140003,360034,360020,190008,360011,355001,120001,360013,230001,360007,140002,360030,190003,360018,360014,360028,140001,181001,140005,190005,360012,360033,360006,200002,360002,190001,360031,160003,130003,210001,160001,355002,170001,130005,200001,167001,110005,190006,160004,120003,190004,180001,320002,190002,360032,360004,130004,360001,360027,130001,360016,110001,320001,350001,360005,260001
+[2022-07-18 17:05:54,371] INFO [64] [REPORT] Report URL: ?sid=aeb7acave7gx
+[2022-07-18 17:05:54,373] INFO [194] target<<<<->>>>: https://github.com/Ishan-sharma8/Movie-website
+[2022-07-18 17:05:54,373] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:05:54,373] INFO [401] [PICKUP] [CLONE] repository already exist.
+[2022-07-18 17:05:54,373] INFO [355] [PICKUP] [PULL] pull repository...
+[2022-07-18 17:05:55,674] INFO [493] [PICKUP] [CHECKOUT] Already on 'main'
+[2022-07-18 17:05:56,593] INFO [379] [PICKUP] [PULL] Already up to date.
+[2022-07-18 17:05:56,594] INFO [380] [PICKUP] [PULL] From https://github.com/Ishan-sharma8/Movie-website > * branch            main       -> FETCH_HEAD
+[2022-07-18 17:05:56,595] INFO [390] [PICKUP] [PULL] pull done.
+[2022-07-18 17:05:56,595] INFO [203] Clone Successful !
+[2022-07-18 17:05:56,595] INFO [75] [CLI] Target directory: /tmp/cobra/git/Ishan-sharma8/Movie-website
+[2022-07-18 17:05:56,605] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:05:56,606] INFO [85] [CLI] [STATISTIC] Language: css Framework: Unknown Framework
+[2022-07-18 17:05:56,606] INFO [88] [CLI] [STATISTIC] Files: 44, Extensions:6, Consume: 0.0037969999999999983
+[2022-07-18 17:05:58,151] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:05:58,913] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:05:59,122] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 1/65/29 Vulnerabilities (1)
++---+--------+---------------------+-------+--------------+----------------------------------------------------+
+| # | CVI    | Rule                | Level | Target       | Source Code Content                                |
++---+--------+---------------------+-------+--------------+----------------------------------------------------+
+| 1 | 130002 | Hardcoded Token/Key | L-02  | /script.js:3 | const API_KEY = 'api_key=1cf50e6248dc270629e802686 |
++---+--------+---------------------+-------+--------------+----------------------------------------------------+
+[2022-07-18 17:05:59,122] INFO [245] [SCAN] Not Trigger Rules (65): 110003,190007,120004,165001,170002,360029,360021,120002,360035,140003,360034,360020,190008,360011,355001,120001,360013,230001,360007,140002,360030,190003,360018,360014,360028,140001,181001,140005,190005,360012,360033,360006,200002,360002,190001,360031,160003,130003,210001,160001,355002,170001,130005,200001,167001,110005,190006,160004,120003,190004,180001,320002,190002,360032,360004,130004,360001,360027,130001,360016,110001,320001,350001,360005,260001
+[2022-07-18 17:06:19,631] INFO [64] [REPORT] Report URL: ?sid=a57011f8p971
+[2022-07-18 17:06:19,633] INFO [194] target<<<<->>>>: https://github.com/digininja/DVWA
+[2022-07-18 17:06:19,633] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:06:19,634] INFO [417] git clone https://github.com/digininja/DVWA "/tmp/cobra/git/digininja/DVWA" -b main
+[2022-07-18 17:06:20,312] INFO [427] [PICKUP] [CLONE] Cloning into '/tmp/cobra/git/digininja/DVWA'...
+fatal: Remote branch main not found in upstream origin
+[2022-07-18 17:06:20,314] CRITICAL [109] Repository or branch not exist!
+[2022-07-18 17:06:31,663] INFO [64] [REPORT] Report URL: ?sid=ab14c1ocwtvt
+[2022-07-18 17:06:31,665] INFO [194] target<<<<->>>>: https://github.com/digininja/DVWA
+[2022-07-18 17:06:31,665] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:06:31,665] INFO [417] git clone https://github.com/digininja/DVWA "/tmp/cobra/git/digininja/DVWA" -b master
+[2022-07-18 17:06:34,013] INFO [427] [PICKUP] [CLONE] Cloning into '/tmp/cobra/git/digininja/DVWA'...
+[2022-07-18 17:06:34,014] INFO [431] [PICKUP] [CLONE] clone done. Switching to branch master
+[2022-07-18 17:06:34,858] INFO [493] [PICKUP] [CHECKOUT] Already on 'master'
+[2022-07-18 17:06:34,859] INFO [203] Clone Successful !
+[2022-07-18 17:06:34,859] INFO [75] [CLI] Target directory: /tmp/cobra/git/digininja/DVWA
+[2022-07-18 17:06:34,884] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:06:34,885] INFO [85] [CLI] [STATISTIC] Language: python Framework: Unknown Framework
+[2022-07-18 17:06:34,885] INFO [88] [CLI] [STATISTIC] Files: 631, Extensions:25, Consume: 0.017191
+[2022-07-18 17:06:36,314] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:06:37,080] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:06:42,511] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 17/49/29 Vulnerabilities (46)
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+| #  | CVI    | Rule                                              | Level | Target                                                                                         | Source Code Content                               |
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+| 1  | 190003 | print phpinfo                                     | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1010                                            | $exploits[] = ';phpinfo()';                       |
+| 2  | 190003 | print phpinfo                                     | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1011                                            | $exploits[] = '@phpinfo()';                       |
+| 3  | 190003 | print phpinfo                                     | L-02  | /vulnerabilities/upload/help/help.php:18                                                       | <p>Execute any PHP function of your choosing on   |
+| 4  | 190003 | print phpinfo                                     | L-02  | /phpinfo.php:8                                                                                 | phpinfo();                                        |
+| 5  | 130004 | Configuration hardcoded password 2                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:61                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 6  | 130004 | Configuration hardcoded password 2                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:78                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 7  | 130001 | Assigned hardcoded password                       | L-02  | /vulnerabilities/sqli/test.php:4                                                               | $password = "password";                           |
+| 8  | 360001 | webshell1                                         | H-07  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1015                                            | $exploits[] = '; include "http://evilsite.        |
+| 9  | 200002 | unsafe random number                              | L-02  | /vulnerabilities/upload/source/impossible.php:18                                               | $target_file   =  md5( uniqid() . $uploaded_name  |
+| 10 | 200002 | unsafe random number                              | L-02  | /vulnerabilities/upload/source/impossible.php:20                                               | $temp_file    .= DIRECTORY_SEPARATOR . md5( uniqi |
+| 11 | 200002 | unsafe random number                              | L-02  | /dvwa/includes/dvwaPage.inc.php:573                                                            | $_SESSION[ 'session_token' ] = md5( uniqid() );   |
+| 12 | 190005 | cache file leak                                   | M-04  | /database/sqli.db:0                                                                            |                                                   |
+| 13 | 130002 | Hardcoded Token/Key                               | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:908                                             | $exploits[] = 'DECLARE%20@S%20CHAR(4000);S        |
+| 14 | 130002 | Hardcoded Token/Key                               | L-02  | /vulnerabilities/csrf/help/help.php:54                                                         | user-token: 026d0caed93471b507ed460ebddbd096      |
+| 15 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:61                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 16 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:63                                              | password        = 123456                          |
+| 17 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:78                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 18 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:80                                              | password        = 123456                          |
+| 19 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:84                                              | ;host           = localhost                       |
+| 20 | 130005 | Hardcoded IP                                      | M-04  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1325                                            | $exploits[] = '<xjxobj><e><k>insert</k><v>        |
+| 21 | 130005 | Hardcoded IP                                      | M-04  | /vulnerabilities/sqli/test.php:2                                                               | $host = "192.168.0.7";                            |
+| 22 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/sqli_blind/cookie-input.php:12                                                | setcookie( 'id', $_POST[ 'id' ]);                 |
+| 23 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/weak_id/source/impossible.php:7                                               | setcookie("dvwaSession", $cookie_value, time()+36 |
+| 24 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/weak_id/source/high.php:11                                                    | setcookie("dvwaSession", $cookie_value, time()+36 |
+| 25 | 190008 | information leakage                               | L-02  | /external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/MakeWellFormed.php:167 | //var_dump($this->stack);                         |
+| 26 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/impossible.php:55                                           | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 27 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/low.php:44                                                  | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 28 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/high.php:52                                                 | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 29 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/impossible.php:22                                                 | $cmd = shell_exec( 'ping  ' . $target );          |
+| 30 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/impossible.php:26                                                 | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 31 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/medium.php:19                                                     | $cmd = shell_exec( 'ping  ' . $target );          |
+| 32 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/medium.php:23                                                     | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 33 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/low.php:10                                                        | $cmd = shell_exec( 'ping  ' . $target );          |
+| 34 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/low.php:14                                                        | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 35 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/high.php:26                                                       | $cmd = shell_exec( 'ping  ' . $target );          |
+| 36 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/high.php:30                                                       | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 37 | 160004 | SQL Execute Functions                             | H-08  | /vulnerabilities/csrf/source/high.php:43                                                       | $result = mysqli_query($GLOBALS["___mysqli_ston"  |
+| 38 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:14                                                        | $lowsrc = @file_get_contents("./{$id}/source/low. |
+| 39 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:18                                                        | $medsrc = @file_get_contents("./{$id}/source/medi |
+| 40 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:22                                                        | $highsrc = @file_get_contents("./{$id}/source/hig |
+| 41 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:26                                                        | $impsrc = @file_get_contents("./{$id}/source/impo |
+| 42 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source.php:54                                                            | $source = @file_get_contents( DVWA_WEB_PAGE_TO_RO |
+| 43 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source.php:59                                                            | $js_source = @file_get_contents( DVWA_WEB_PAGE_T  |
+| 44 | 140003 | Direct input and input parameters may lead to XSS | M-04  | /vulnerabilities/csp/source/jsonp.php:12                                                       | echo $callback . "(".json_encode($outp).")";      |
+| 45 | 180001 | remote code execution                             | C-10  | /vulnerabilities/view_help.php:20                                                              | eval( '?>' . file_get_contents( DVWA_WEB_PAGE_TO  |
+| 46 | 180001 | remote code execution                             | C-10  | /vulnerabilities/view_help.php:22                                                              | eval( '?>' . file_get_contents( DVWA_WEB_PAGE_TO  |
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+[2022-07-18 17:06:42,512] INFO [245] [SCAN] Not Trigger Rules (49): 190001,110003,360031,160003,190007,120004,165001,160001,355002,170001,170002,200001,360029,167001,110005,190006,360021,360034,360020,360035,360011,355001,120003,120001,190004,360013,320002,360007,140002,360030,190002,360032,360004,360027,360018,360014,360028,360016,110001,140001,320001,350001,140005,360012,360033,360006,360002,360005,260001
+[2022-07-18 17:10:42,179] INFO [774] Start 127.0.0.1:8888
+[2022-07-18 17:10:57,360] INFO [64] [REPORT] Report URL: ?sid=aa0fcfldbp6b
+[2022-07-18 17:10:57,362] INFO [194] target<<<<->>>>: https://github.com/DaanishSharma/DSA
+[2022-07-18 17:10:57,362] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:10:57,362] INFO [401] [PICKUP] [CLONE] repository already exist.
+[2022-07-18 17:10:57,362] INFO [355] [PICKUP] [PULL] pull repository...
+[2022-07-18 17:10:58,579] INFO [493] [PICKUP] [CHECKOUT] Already on 'main'
+[2022-07-18 17:11:00,009] INFO [379] [PICKUP] [PULL] Already up to date.
+[2022-07-18 17:11:00,011] INFO [380] [PICKUP] [PULL] From https://github.com/DaanishSharma/DSA > * branch            main       -> FETCH_HEAD
+[2022-07-18 17:11:00,011] INFO [390] [PICKUP] [PULL] pull done.
+[2022-07-18 17:11:00,012] INFO [203] Clone Successful !
+[2022-07-18 17:11:00,012] INFO [75] [CLI] Target directory: /tmp/cobra/git/DaanishSharma/DSA
+[2022-07-18 17:11:00,020] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:11:00,021] INFO [85] [CLI] [STATISTIC] Language: c++ Framework: Unknown Framework
+[2022-07-18 17:11:00,022] INFO [88] [CLI] [STATISTIC] Files: 45, Extensions:7, Consume: 0.0029480000000000027
+[2022-07-18 17:11:01,538] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:11:02,263] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:11:02,375] INFO [241] [SCAN] Not found vulnerability!
+[2022-07-18 17:11:14,319] INFO [64] [REPORT] Report URL: ?sid=a57011303906
+[2022-07-18 17:11:14,321] INFO [194] target<<<<->>>>: https://github.com/digininja/DVWA
+[2022-07-18 17:11:14,321] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:11:14,321] INFO [401] [PICKUP] [CLONE] repository already exist.
+[2022-07-18 17:11:14,321] INFO [355] [PICKUP] [PULL] pull repository...
+[2022-07-18 17:11:15,293] INFO [493] [PICKUP] [CHECKOUT] fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[2022-07-18 17:11:16,202] INFO [379] [PICKUP] [PULL] 
+[2022-07-18 17:11:16,203] INFO [380] [PICKUP] [PULL] fatal: couldn't find remote ref main
+[2022-07-18 17:11:16,205] CRITICAL [109] Repository or branch not exist!
+[2022-07-18 17:11:24,814] INFO [64] [REPORT] Report URL: ?sid=ab14c1nsc7zr
+[2022-07-18 17:11:24,817] INFO [194] target<<<<->>>>: https://github.com/digininja/DVWA
+[2022-07-18 17:11:24,818] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:11:24,818] INFO [401] [PICKUP] [CLONE] repository already exist.
+[2022-07-18 17:11:24,818] INFO [355] [PICKUP] [PULL] pull repository...
+[2022-07-18 17:11:26,061] INFO [493] [PICKUP] [CHECKOUT] Already on 'master'
+[2022-07-18 17:11:26,970] INFO [379] [PICKUP] [PULL] Already up to date.
+[2022-07-18 17:11:26,970] INFO [380] [PICKUP] [PULL] From https://github.com/digininja/DVWA > * branch            master     -> FETCH_HEAD
+[2022-07-18 17:11:26,971] INFO [390] [PICKUP] [PULL] pull done.
+[2022-07-18 17:11:26,971] INFO [203] Clone Successful !
+[2022-07-18 17:11:26,971] INFO [75] [CLI] Target directory: /tmp/cobra/git/digininja/DVWA
+[2022-07-18 17:11:27,000] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:11:27,001] INFO [85] [CLI] [STATISTIC] Language: python Framework: Unknown Framework
+[2022-07-18 17:11:27,001] INFO [88] [CLI] [STATISTIC] Files: 631, Extensions:25, Consume: 0.020059
+[2022-07-18 17:11:28,297] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:11:28,923] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:11:34,147] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 17/49/29 Vulnerabilities (46)
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+| #  | CVI    | Rule                                              | Level | Target                                                                                         | Source Code Content                               |
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+| 1  | 190003 | print phpinfo                                     | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1010                                            | $exploits[] = ';phpinfo()';                       |
+| 2  | 190003 | print phpinfo                                     | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1011                                            | $exploits[] = '@phpinfo()';                       |
+| 3  | 190003 | print phpinfo                                     | L-02  | /vulnerabilities/upload/help/help.php:18                                                       | <p>Execute any PHP function of your choosing on   |
+| 4  | 190003 | print phpinfo                                     | L-02  | /phpinfo.php:8                                                                                 | phpinfo();                                        |
+| 5  | 130004 | Configuration hardcoded password 2                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:61                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 6  | 130004 | Configuration hardcoded password 2                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:78                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 7  | 130001 | Assigned hardcoded password                       | L-02  | /vulnerabilities/sqli/test.php:4                                                               | $password = "password";                           |
+| 8  | 360001 | webshell1                                         | H-07  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1015                                            | $exploits[] = '; include "http://evilsite.        |
+| 9  | 200002 | unsafe random number                              | L-02  | /vulnerabilities/upload/source/impossible.php:18                                               | $target_file   =  md5( uniqid() . $uploaded_name  |
+| 10 | 200002 | unsafe random number                              | L-02  | /vulnerabilities/upload/source/impossible.php:20                                               | $temp_file    .= DIRECTORY_SEPARATOR . md5( uniqi |
+| 11 | 200002 | unsafe random number                              | L-02  | /dvwa/includes/dvwaPage.inc.php:573                                                            | $_SESSION[ 'session_token' ] = md5( uniqid() );   |
+| 12 | 190005 | cache file leak                                   | M-04  | /database/sqli.db:0                                                                            |                                                   |
+| 13 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:61                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 14 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:63                                              | password        = 123456                          |
+| 15 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:78                                              | wrapper         = "mysql:host=localhost;port=3    |
+| 16 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:80                                              | password        = 123456                          |
+| 17 | 130003 | Configuration hardcoded password 1                | M-04  | /external/phpids/0.6/lib/IDS/Config/Config.ini:84                                              | ;host           = localhost                       |
+| 18 | 130002 | Hardcoded Token/Key                               | L-02  | /external/phpids/0.6/tests/IDS/MonitorTest.php:908                                             | $exploits[] = 'DECLARE%20@S%20CHAR(4000);S        |
+| 19 | 130002 | Hardcoded Token/Key                               | L-02  | /vulnerabilities/csrf/help/help.php:54                                                         | user-token: 026d0caed93471b507ed460ebddbd096      |
+| 20 | 130005 | Hardcoded IP                                      | M-04  | /external/phpids/0.6/tests/IDS/MonitorTest.php:1325                                            | $exploits[] = '<xjxobj><e><k>insert</k><v>        |
+| 21 | 130005 | Hardcoded IP                                      | M-04  | /vulnerabilities/sqli/test.php:2                                                               | $host = "192.168.0.7";                            |
+| 22 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/sqli_blind/cookie-input.php:12                                                | setcookie( 'id', $_POST[ 'id' ]);                 |
+| 23 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/weak_id/source/impossible.php:7                                               | setcookie("dvwaSession", $cookie_value, time()+36 |
+| 24 | 230001 | SESSION fixed attack                              | H-08  | /vulnerabilities/weak_id/source/high.php:11                                                    | setcookie("dvwaSession", $cookie_value, time()+36 |
+| 25 | 190008 | information leakage                               | L-02  | /external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/MakeWellFormed.php:167 | //var_dump($this->stack);                         |
+| 26 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/impossible.php:55                                           | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 27 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/low.php:44                                                  | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 28 | 210001 | Unverified arbitrary link jumps                   | M-05  | /vulnerabilities/sqli_blind/source/high.php:52                                                 | header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 No  |
+| 29 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/impossible.php:22                                                 | $cmd = shell_exec( 'ping  ' . $target );          |
+| 30 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/impossible.php:26                                                 | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 31 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/medium.php:19                                                     | $cmd = shell_exec( 'ping  ' . $target );          |
+| 32 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/medium.php:23                                                     | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 33 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/low.php:10                                                        | $cmd = shell_exec( 'ping  ' . $target );          |
+| 34 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/low.php:14                                                        | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 35 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/high.php:26                                                       | $cmd = shell_exec( 'ping  ' . $target );          |
+| 36 | 181001 | remote command execution                          | C-10  | /vulnerabilities/exec/source/high.php:30                                                       | $cmd = shell_exec( 'ping  -c 4 ' . $target );     |
+| 37 | 160004 | SQL Execute Functions                             | H-08  | /vulnerabilities/csrf/source/high.php:43                                                       | $result = mysqli_query($GLOBALS["___mysqli_ston"  |
+| 38 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:14                                                        | $lowsrc = @file_get_contents("./{$id}/source/low. |
+| 39 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:18                                                        | $medsrc = @file_get_contents("./{$id}/source/medi |
+| 40 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:22                                                        | $highsrc = @file_get_contents("./{$id}/source/hig |
+| 41 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source_all.php:26                                                        | $impsrc = @file_get_contents("./{$id}/source/impo |
+| 42 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source.php:54                                                            | $source = @file_get_contents( DVWA_WEB_PAGE_TO_RO |
+| 43 | 120002 | SSRF caused by file_get_contents                  | H-07  | /vulnerabilities/view_source.php:59                                                            | $js_source = @file_get_contents( DVWA_WEB_PAGE_T  |
+| 44 | 140003 | Direct input and input parameters may lead to XSS | M-04  | /vulnerabilities/csp/source/jsonp.php:12                                                       | echo $callback . "(".json_encode($outp).")";      |
+| 45 | 180001 | remote code execution                             | C-10  | /vulnerabilities/view_help.php:20                                                              | eval( '?>' . file_get_contents( DVWA_WEB_PAGE_TO  |
+| 46 | 180001 | remote code execution                             | C-10  | /vulnerabilities/view_help.php:22                                                              | eval( '?>' . file_get_contents( DVWA_WEB_PAGE_TO  |
++----+--------+---------------------------------------------------+-------+------------------------------------------------------------------------------------------------+---------------------------------------------------+
+[2022-07-18 17:11:34,148] INFO [245] [SCAN] Not Trigger Rules (49): 360002,170001,360028,360030,120004,355001,120001,190004,360020,190002,167001,360033,350001,360027,120003,320001,140001,360035,360032,160003,355002,360034,320002,160001,360013,360012,190001,170002,360004,140005,360005,360021,200001,360006,360018,190006,360029,360011,260001,110003,360016,165001,110005,140002,360007,190007,360031,110001,360014
+[2022-07-18 17:12:53,231] INFO [64] [REPORT] Report URL: ?sid=a0fb1d4zswmw
+[2022-07-18 17:12:53,233] INFO [181] target<<<<->>>>: https://files.pythonhosted.org/packages/07/90/10bcf94afe2f6e4699f05a65280e649f1469a52ce7a044bc6bc1eec9b075/malware-1.0.0.tar.gz
+[2022-07-18 17:12:53,233] INFO [740] wget https://files.pythonhosted.org/packages/07/90/10bcf94afe2f6e4699f05a65280e649f1469a52ce7a044bc6bc1eec9b075/malware-1.0.0.tar.gz -P "/tmp/cobra/git/packages/malware-1.0.0.tar.gz" 
+[2022-07-18 17:12:54,168] INFO [750] [PICKUP] [CLONE] --2022-07-18 17:12:53--  https://files.pythonhosted.org/packages/07/90/10bcf94afe2f6e4699f05a65280e649f1469a52ce7a044bc6bc1eec9b075/malware-1.0.0.tar.gz
+Resolving files.pythonhosted.org (files.pythonhosted.org)... 199.232.253.63, 2a04:4e42:fd3::319
+Connecting to files.pythonhosted.org (files.pythonhosted.org)|199.232.253.63|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1151 (1.1K) [application/x-tar]
+Saving to: ‘/tmp/cobra/git/packages/malware-1.0.0.tar.gz/malware-1.0.0.tar.gz’
+
+     0K .                                                     100% 27.5M=0s
+
+2022-07-18 17:12:54 (27.5 MB/s) - ‘/tmp/cobra/git/packages/malware-1.0.0.tar.gz/malware-1.0.0.tar.gz’ saved [1151/1151]
+[2022-07-18 17:12:54,169] INFO [754] [PICKUP] [CLONE] clone done. Switching to branch master
+[2022-07-18 17:12:54,169] CRITICAL [756] dir is ->>>>: /tmp/cobra/git/packages/malware-1.0.0.tar.gz
+[2022-07-18 17:12:54,170] INFO [55] filename : /tmp/cobra/git/packages/malware-1.0.0.tar.gz/malware-1.0.0.tar.gz
+[2022-07-18 17:12:54,186] INFO [100] Decompress path count: 1, directory path: /tmp/cobra/package/tmp_cobra_git_packages_malware-1/malware-1.0.0
+[2022-07-18 17:12:54,186] INFO [75] [CLI] Target directory: /tmp/cobra/package/tmp_cobra_git_packages_malware-1/malware-1.0.0
+[2022-07-18 17:12:54,193] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:12:54,194] INFO [85] [CLI] [STATISTIC] Language: python Framework: Unknown Framework
+[2022-07-18 17:12:54,194] INFO [88] [CLI] [STATISTIC] Files: 8, Extensions:6, Consume: 0.0008400000000000005
+[2022-07-18 17:12:55,689] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:12:56,430] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:12:56,643] INFO [241] [SCAN] Not found vulnerability!
+[2022-07-18 17:13:42,407] INFO [64] [REPORT] Report URL: ?sid=a511caab2je4
+[2022-07-18 17:13:42,408] INFO [194] target<<<<->>>>: https://github.com/SasanLabs/VulnerableApp
+[2022-07-18 17:13:42,408] INFO [399] [PICKUP] [CLONE] clone repository...
+[2022-07-18 17:13:42,408] INFO [417] git clone https://github.com/SasanLabs/VulnerableApp "/tmp/cobra/git/SasanLabs/VulnerableApp" -b master
+[2022-07-18 17:13:55,074] INFO [427] [PICKUP] [CLONE] Cloning into '/tmp/cobra/git/SasanLabs/VulnerableApp'...
+[2022-07-18 17:13:55,075] INFO [431] [PICKUP] [CLONE] clone done. Switching to branch master
+[2022-07-18 17:13:56,014] INFO [493] [PICKUP] [CHECKOUT] Already on 'master'
+[2022-07-18 17:13:56,015] INFO [203] Clone Successful !
+[2022-07-18 17:13:56,015] INFO [75] [CLI] Target directory: /tmp/cobra/git/SasanLabs/VulnerableApp
+[2022-07-18 17:13:56,031] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:13:56,031] INFO [85] [CLI] [STATISTIC] Language: java Framework: Unknown Framework
+[2022-07-18 17:13:56,031] INFO [88] [CLI] [STATISTIC] Files: 235, Extensions:28, Consume: 0.008073
+[2022-07-18 17:13:57,554] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:13:58,286] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:13:58,348] INFO [128] [AST] Can't get function name: 66:    public UnrestrictedFileUpload() throws IOException, URISyntaxException {
+[2022-07-18 17:13:58,349] INFO [128] [AST] Can't get function name: 148:    Path getContentDispositionRoot() {
+[2022-07-18 17:13:58,350] INFO [128] [AST] Can't get function name: 190:        return genericFileUploadUtility(root, fileName, () -> true, file, false, false);
+[2022-07-18 17:13:58,804] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 6/60/29 Vulnerabilities (19)
++----+--------+------------------------------------+-------+--------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| #  | CVI    | Rule                               | Level | Target                                                                                                       | Source Code Content                                |
++----+--------+------------------------------------+-------+--------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| 1  | 130004 | Configuration hardcoded password 2 | M-04  | /.github/workflows/docker.yml:16                                                                             | username: ${{ secrets.DOCKER_USERNAME }}           |
+| 2  | 130004 | Configuration hardcoded password 2 | M-04  | /.github/workflows/docker.yml:17                                                                             | password: ${{ secrets.DOCKER_PASSWORD }}           |
+| 3  | 130004 | Configuration hardcoded password 2 | M-04  | /src/main/resources/attackvectors/JWTVulnerabilityPayload.properties:1                                       | NONE_ALGORITHM_ATTACK_CURL_PAYLOAD=curl 'http://lo |
+| 4  | 200001 | unsafe random number               | L-02  | /src/main/java/org/sasanlabs/service/vulnerability/fileupload/UnrestrictedFileUpload.java:53                 | private static final Random RANDOM = new Rando     |
+| 5  | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/ErrorBasedSQLInjectionVulnerability.java:65  | "select * from cars wh                             |
+| 6  | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/ErrorBasedSQLInjectionVulnerability.java:110 | "select * from cars wh                             |
+| 7  | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/ErrorBasedSQLInjectionVulnerability.java:158 | "select * from cars wh                             |
+| 8  | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/ErrorBasedSQLInjectionVulnerability.java:209 | "selec                                             |
+| 9  | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/UnionBasedSQLInjectionVulnerability.java:46  | "select * from cars where id=" + i                 |
+| 10 | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/UnionBasedSQLInjectionVulnerability.java:71  | "select * from cars where id='" +                  |
+| 11 | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/UnionBasedSQLInjectionVulnerability.java:94  | "select * from cars where id='" +                  |
+| 12 | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/BlindSQLInjectionVulnerability.java:53       | "select * from cars where id=" + i                 |
+| 13 | 160001 | Splicing SQL Injection             | H-08  | /src/main/java/org/sasanlabs/service/vulnerability/sqlInjection/BlindSQLInjectionVulnerability.java:77       | "select * from cars where id='" +                  |
+| 14 | 130003 | Configuration hardcoded password 1 | M-04  | /src/main/resources/application.properties:6                                                                 | spring.datasource.admin.username=admin             |
+| 15 | 130003 | Configuration hardcoded password 1 | M-04  | /src/main/resources/application.properties:7                                                                 | spring.datasource.admin.password=hacker            |
+| 16 | 130003 | Configuration hardcoded password 1 | M-04  | /src/main/resources/application.properties:13                                                                | spring.datasource.application.username=application |
+| 17 | 130003 | Configuration hardcoded password 1 | M-04  | /src/main/resources/application.properties:14                                                                | spring.datasource.application.password=hacker      |
+| 18 | 190004 | Certificate file leak              | M-04  | /src/main/resources/sasanlabs.p12:0                                                                          |                                                    |
+| 19 | 130005 | Hardcoded IP                       | M-04  | /src/main/resources/static/index.html:17                                                                     | d="M9.655 8H2.333c-.264 0-.398.068-.471.121a.      |
++----+--------+------------------------------------+-------+--------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+[2022-07-18 17:13:58,804] INFO [245] [SCAN] Not Trigger Rules (60): 160004,170001,360028,120004,360020,167001,360033,360027,130002,181001,120003,320001,360035,360013,360012,170002,130001,360005,360021,190003,190006,360029,260001,110003,360016,190007,190008,360002,360030,360001,355001,120001,190002,350001,140001,360032,355002,160003,140003,320002,360034,140005,190001,360004,230001,180001,360006,210001,360018,360011,120002,165001,110005,140002,360007,200002,360031,110001,190005,360014
+[2022-07-18 17:15:08,335] INFO [64] [REPORT] Report URL: ?sid=a581bcglqizu
+[2022-07-18 17:15:08,337] INFO [181] target<<<<->>>>: https://files.pythonhosted.org/packages/f4/00/2de395c769335956b8650f990ef2a15e860be83b544c408ff95713446329/pandas-1.4.3.tar.gz
+[2022-07-18 17:15:08,337] INFO [740] wget https://files.pythonhosted.org/packages/f4/00/2de395c769335956b8650f990ef2a15e860be83b544c408ff95713446329/pandas-1.4.3.tar.gz -P "/tmp/cobra/git/packages/pandas-1.4.3.tar.gz" 
+[2022-07-18 17:15:10,232] INFO [750] [PICKUP] [CLONE] --2022-07-18 17:15:08--  https://files.pythonhosted.org/packages/f4/00/2de395c769335956b8650f990ef2a15e860be83b544c408ff95713446329/pandas-1.4.3.tar.gz
+Resolving files.pythonhosted.org (files.pythonhosted.org)... 199.232.253.63, 2a04:4e42:fd3::319
+Connecting to files.pythonhosted.org (files.pythonhosted.org)|199.232.253.63|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4941520 (4.7M) [application/x-tar]
+Saving to: ‘/tmp/cobra/git/packages/pandas-1.4.3.tar.gz/pandas-1.4.3.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  1%  286K 17s
+    50K .......... .......... .......... .......... ..........  2% 5.45M 9s
+   100K .......... .......... .......... .......... ..........  3% 6.29M 6s
+   150K .......... .......... .......... .......... ..........  4% 9.91M 5s
+   200K .......... .......... .......... .......... ..........  5% 7.09M 4s
+   250K .......... .......... .......... .......... ..........  6%  303K 6s
+   300K .......... .......... .......... .......... ..........  7% 16.9M 5s
+   350K .......... .......... .......... .......... ..........  8% 4.77M 4s
+   400K .......... .......... .......... .......... ..........  9% 7.19M 4s
+   450K .......... .......... .......... .......... .......... 10% 6.51M 3s
+   500K .......... .......... .......... .......... .......... 11% 7.47M 3s
+   550K .......... .......... .......... .......... .......... 12% 7.03M 3s
+   600K .......... .......... .......... .......... .......... 13%  303K 4s
+   650K .......... .......... .......... .......... .......... 14% 56.9M 3s
+   700K .......... .......... .......... .......... .......... 15% 6.45M 3s
+   750K .......... .......... .......... .......... .......... 16% 4.68M 3s
+   800K .......... .......... .......... .......... .......... 17% 9.03M 3s
+   850K .......... .......... .......... .......... .......... 18% 6.51M 3s
+   900K .......... .......... .......... .......... .......... 19% 7.14M 3s
+   950K .......... .......... .......... .......... .......... 20% 6.46M 2s
+  1000K .......... .......... .......... .......... .......... 21%  304K 3s
+  1050K .......... .......... .......... .......... .......... 22% 10.8M 3s
+  1100K .......... .......... .......... .......... .......... 23% 5.02M 3s
+  1150K .......... .......... .......... .......... .......... 24% 6.26M 2s
+  1200K .......... .......... .......... .......... .......... 25% 3.78M 2s
+  1250K .......... .......... .......... .......... .......... 26% 6.16M 2s
+  1300K .......... .......... .......... .......... .......... 27% 7.91M 2s
+  1350K .......... .......... .......... .......... .......... 29% 6.27M 2s
+  1400K .......... .......... .......... .......... .......... 30% 6.31M 2s
+  1450K .......... .......... .......... .......... .......... 31% 7.40M 2s
+  1500K .......... .......... .......... .......... .......... 32% 5.60M 2s
+  1550K .......... .......... .......... .......... .......... 33% 5.90M 2s
+  1600K .......... .......... .......... .......... .......... 34% 6.81M 2s
+  1650K .......... .......... .......... .......... .......... 35% 6.83M 2s
+  1700K .......... .......... .......... .......... .......... 36% 7.12M 2s
+  1750K .......... .......... .......... .......... .......... 37% 7.45M 2s
+  1800K .......... .......... .......... .......... .......... 38% 7.55M 1s
+  1850K .......... .......... .......... .......... .......... 39% 6.32M 1s
+  1900K .......... .......... .......... .......... .......... 40% 7.32M 1s
+  1950K .......... .......... .......... .......... .......... 41% 5.00M 1s
+  2000K .......... .......... .......... .......... .......... 42% 7.01M 1s
+  2050K .......... .......... .......... .......... .......... 43% 6.99M 1s
+  2100K .......... .......... .......... .......... .......... 44% 6.96M 1s
+  2150K .......... .......... .......... .......... .......... 45% 7.16M 1s
+  2200K .......... .......... .......... .......... .......... 46% 6.95M 1s
+  2250K .......... .......... .......... .......... .......... 47% 7.08M 1s
+  2300K .......... .......... .......... .......... .......... 48% 7.34M 1s
+  2350K .......... .......... .......... .......... .......... 49% 4.52M 1s
+  2400K .......... .......... .......... .......... .......... 50% 7.25M 1s
+  2450K .......... .......... .......... .......... .......... 51% 7.18M 1s
+  2500K .......... .......... .......... .......... .......... 52% 7.44M 1s
+  2550K .......... .......... .......... .......... .......... 53% 6.03M 1s
+  2600K .......... .......... .......... .......... .......... 54% 7.27M 1s
+  2650K .......... .......... .......... .......... .......... 55% 6.15M 1s
+  2700K .......... .......... .......... .......... .......... 56% 7.42M 1s
+  2750K .......... .......... .......... .......... .......... 58% 5.04M 1s
+  2800K .......... .......... .......... .......... .......... 59% 5.94M 1s
+  2850K .......... .......... .......... .......... .......... 60% 7.01M 1s
+  2900K .......... .......... .......... .......... .......... 61% 6.82M 1s
+  2950K .......... .......... .......... .......... .......... 62% 6.92M 1s
+  3000K .......... .......... .......... .......... .......... 63% 6.62M 1s
+  3050K .......... .......... .......... .......... .......... 64% 8.26M 1s
+  3100K .......... .......... .......... .......... .......... 65% 6.79M 1s
+  3150K .......... .......... .......... .......... .......... 66% 5.10M 1s
+  3200K .......... .......... .......... .......... .......... 67% 6.64M 1s
+  3250K .......... .......... .......... .......... .......... 68% 7.16M 1s
+  3300K .......... .......... .......... .......... .......... 69% 6.21M 0s
+  3350K .......... .......... .......... .......... .......... 70% 5.65M 0s
+  3400K .......... .......... .......... .......... .......... 71% 8.29M 0s
+  3450K .......... .......... .......... .......... .......... 72% 7.23M 0s
+  3500K .......... .......... .......... .......... .......... 73% 6.61M 0s
+  3550K .......... .......... .......... .......... .......... 74% 5.62M 0s
+  3600K .......... .......... .......... .......... .......... 75% 6.93M 0s
+  3650K .......... .......... .......... .......... .......... 76% 6.87M 0s
+  3700K .......... .......... .......... .......... .......... 77% 6.68M 0s
+  3750K .......... .......... .......... .......... .......... 78% 6.41M 0s
+  3800K .......... .......... .......... .......... .......... 79% 6.70M 0s
+  3850K .......... .......... .......... .......... .......... 80% 7.46M 0s
+  3900K .......... .......... .......... .......... .......... 81% 7.10M 0s
+  3950K .......... .......... .......... .......... .......... 82% 5.55M 0s
+  4000K .......... .......... .......... .......... .......... 83% 6.24M 0s
+  4050K .......... .......... .......... .......... .......... 84% 6.42M 0s
+  4100K .......... .......... .......... .......... .......... 85% 7.15M 0s
+  4150K .......... .......... .......... .......... .......... 87% 6.58M 0s
+  4200K .......... .......... .......... .......... .......... 88% 7.29M 0s
+  4250K .......... .......... .......... .......... .......... 89% 6.84M 0s
+  4300K .......... .......... .......... .......... .......... 90% 6.91M 0s
+  4350K .......... .......... .......... .......... .......... 91% 5.31M 0s
+  4400K .......... .......... .......... .......... .......... 92% 6.76M 0s
+  4450K .......... .......... .......... .......... .......... 93% 6.42M 0s
+  4500K .......... .......... .......... .......... .......... 94% 8.23M 0s
+  4550K .......... .......... .......... .......... .......... 95% 6.65M 0s
+  4600K .......... .......... .......... .......... .......... 96% 7.04M 0s
+  4650K .......... .......... .......... .......... .......... 97% 6.19M 0s
+  4700K .......... .......... .......... .......... .......... 98% 8.04M 0s
+  4750K .......... .......... .......... .......... .......... 99% 4.49M 0s
+  4800K .......... .......... .....                           100% 19.1M=1.3s
+
+2022-07-18 17:15:10 (3.50 MB/s) - ‘/tmp/cobra/git/packages/pandas-1.4.3.tar.gz/pandas-1.4.3.tar.gz’ saved [4941520/4941520]
+[2022-07-18 17:15:10,234] INFO [754] [PICKUP] [CLONE] clone done. Switching to branch master
+[2022-07-18 17:15:10,234] CRITICAL [756] dir is ->>>>: /tmp/cobra/git/packages/pandas-1.4.3.tar.gz
+[2022-07-18 17:15:10,234] INFO [55] filename : /tmp/cobra/git/packages/pandas-1.4.3.tar.gz/pandas-1.4.3.tar.gz
+[2022-07-18 17:15:10,757] INFO [100] Decompress path count: 1, directory path: /tmp/cobra/package/tmp_cobra_git_packages_pandas-1/pandas-1.4.3
+[2022-07-18 17:15:10,758] INFO [75] [CLI] Target directory: /tmp/cobra/package/tmp_cobra_git_packages_pandas-1/pandas-1.4.3
+[2022-07-18 17:15:10,817] INFO [92] [DETECTION] [FRAMEWORK] Unknown Framework
+[2022-07-18 17:15:10,817] INFO [85] [CLI] [STATISTIC] Language: python Framework: Unknown Framework
+[2022-07-18 17:15:10,817] INFO [88] [CLI] [STATISTIC] Files: 1721, Extensions:25, Consume: 0.041964
+[2022-07-18 17:15:12,279] INFO [401] [PUSH] 18 CVE Rules
+[2022-07-18 17:15:13,044] INFO [187] [PUSH] 95 Rules
+[2022-07-18 17:15:13,451] INFO [243] [SCAN] Trigger Rules/Not Trigger Rules/Off Rules: 3/63/29 Vulnerabilities (7)
++---+--------+------------------------------------+-------+---------------------------------------------------------+----------------------------------------------------+
+| # | CVI    | Rule                               | Level | Target                                                  | Source Code Content                                |
++---+--------+------------------------------------+-------+---------------------------------------------------------+----------------------------------------------------+
+| 1 | 130003 | Configuration hardcoded password 1 | M-04  | /setup.cfg:8                                            | author_email = pandas-dev@python.org               |
+| 2 | 130005 | Hardcoded IP                       | M-04  | /pandas/plotting/_misc.py:173                           | <https://citeseerx.ist.psu.edu/viewdoc/summary     |
+| 3 | 130002 | Hardcoded Token/Key                | L-02  | /doc/source/development/contributing_environment.rst:94 | `vs_buildtools.exe <https://download.visualstudio. |
+| 4 | 130002 | Hardcoded Token/Key                | L-02  | /versioneer.py:106                                      | full SHA1 commit id, e.g. "1076c978a8d3cfc70f408   |
+| 5 | 130002 | Hardcoded Token/Key                | L-02  | /pandas/_version.py:14                                  | "full-revisionid": "e8093ba372f9adfe79439d90fe74b  |
+| 6 | 130002 | Hardcoded Token/Key                | L-02  | /pandas/util/version/__init__.py:3                      | # changeset ae891fd74d6dd4c6063bb04f2faeadaac6fc63 |
+| 7 | 130002 | Hardcoded Token/Key                | L-02  | /pandas/tests/io/test_sql.py:2182                       | #  00b5c10846e800304caa86549ab9da3                 |
++---+--------+------------------------------------+-------+---------------------------------------------------------+----------------------------------------------------+
+[2022-07-18 17:15:13,451] INFO [245] [SCAN] Not Trigger Rules (63): 160004,170001,360028,120004,360020,190004,167001,360033,360027,181001,120003,320001,360035,360013,360012,170002,130001,360005,360021,190003,200001,190006,360029,260001,110003,360016,190007,190008,360002,360030,360001,355001,120001,190002,350001,140001,360032,355002,160003,140003,320002,160001,360034,140005,190001,360004,130004,230001,180001,360006,210001,360018,360011,120002,165001,110005,140002,360007,200002,360031,110001,190005,360014
