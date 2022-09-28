@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="Input parameters can cause XSS"/>
+    <language value="java"/>
+    <match mode="regex-only-match"><![CDATA[out\.println\s*\(\s*request\.get(Parameter|QueryString)\s*\(\s*\"]]></match>
+    <level value="4"/>
+    <solution>
+        ## Security Risk
+        Input and input parameters can cause XSS
+
+        ## fix
+        Use Begis to filter parameters before outputting
+
+    </solution>
+    <test>
+        <case assert="true"><![CDATA[out.println(request.getParameter("test"))]]></case>
+    </test>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

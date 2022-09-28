@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="cache file leak"/>
+    <language value="thumb"/>
+    <match mode="find-extension"><![CDATA[]]></match>
+    <level value="4"/>
+    <solution>
+        ## Security Risk
+        Do not put cache files in git projects
+
+        ## fix
+        delete
+    </solution>
+    <test>
+        <case assert="true"><![CDATA[]]></case>
+    </test>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

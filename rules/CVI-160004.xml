@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="SQL Execute Functions"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[(mysqli_query|pg_execute|pg_insert|pg_query|pg_select|pg_update|sqlite_query|msql_query|mssql_query|odbc_exec|fbsql_query|sybase_query|ibase_query|dbx_query|ingres_query|ifx_query|oci_parse|sqlsrv_query|maxdb_query|db2_exec)]]></match>
+    <level value="8"/>
+    <test>
+        <case assert="true"><![CDATA[
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysqli_query($query);
+        ]]></case>
+        <case assert="false"><![CDATA[
+            $username = "user";
+            $password = "cobra123";
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysqli_query($query);
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+
+        ### SQL injection causes
+        The SQL statement can be controlled by the user, if the parameters are not sufficiently filtered, it will lead to SQL injection
+
+        ### Risk
+        - User information has been tampered with
+        - Attackers steal code and user data
+        - All data of business operations are maliciously obtained
+        - The online code is illegally tampered with and has the effect of delivering traffic or other benefits for malicious attackers
+
+        ## fix
+        - Functions that are no longer in use are directly processed offline
+        - Introduce security components
+        - Code layer fix: Strict filtering of user-controllable parameters
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

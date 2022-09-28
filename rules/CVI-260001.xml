@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="PHP deserialization vulnerability"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[unserialize]]></match>
+    <level value="5"/>
+    <test>
+        <case assert="true"><![CDATA[
+            $test = $_POST['test'];
+            $test_uns = unserialize($test);
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        PHP Deserialization Vulnerability (PHP Object Injection Vulnerability)
+        The parameters passed to `unserialize()` are controllable + construct a serialized string --> so as to control the variables and even functions inside the object
+
+        ## fix
+        Strictly control the parameters of the `unserialize` function, and check the contents of the variables after `unserialize`
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>
+

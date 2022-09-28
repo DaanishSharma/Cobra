@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="information leakage"/>
+    <language value="php"/>
+    <match mode="regex-only-match"><![CDATA[(print_r|var_dump|show_source|highlight_file)\s*\(]]></match>
+    <level value="2"/>
+    <test>
+        <case assert="true"><![CDATA[print_r($a);]]></case>
+        <case assert="true"><![CDATA[var_dump($a);]]></case>
+        <case assert="true"><![CDATA[highlight_file($file);]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        may lead to information leakage
+
+        ## fix
+        delete code
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

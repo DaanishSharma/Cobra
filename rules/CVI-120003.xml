@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="SSRF caused by get_headers"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[get_headers]]></match>
+    <level value="7"/>
+    <test>
+        <case assert="true"><![CDATA[
+                $url = $_GET['url'];
+                echo get_headers($url);
+        ]]></case>
+         <case assert="false"><![CDATA[
+                $url = 'http://www.example.com';
+                echo get_headers($url);
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        SSRF vulnerability (Server-Side Request Forgery)
+
+        ### Formation principle
+        Most of the reasons for the formation of SSRF are that the server provides the function of obtaining data from other server applications and does not filter and restrict the target address.
+
+        ### Risk
+        1. An attacker can perform port scanning on the external network, the internal network where the server is located, or locally to obtain the banner information of the service.
+        2. Attack applications running on the intranet or local.
+        3. Fingerprint identification of intranet web applications.
+        4. Attack web applications of internal and external networks.
+        5. Use the file protocol to read local files, etc.
+
+        ## fix
+        1. Restrict the protocol to HTTP, HTTPS
+        2. Restrict request domain name whitelist
+        3. Prohibit 30x jumps
+
+        ## example
+        ````php
+        $url = $_GET['url'];
+        echo get_headers($url);//The user-controllable parameters are not filtered, and the attacker maliciously constructs the input may cause SSRF
+        ````
+    </solution>
+    <status value="on"/>
+    <author name="Lightless" email="root@lightless.me"/>
+</cobra>

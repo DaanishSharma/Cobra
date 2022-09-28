@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="Insecure permission settings"/>
+    <language value="php"/>
+    <match mode="regex-only-match"><![CDATA[(mkdir|chmod)\s*\(\s*(.*?)\s*,\s*0777\s*\)]]></match>
+    <level value="2"/>
+    <test>
+        <case assert="true"><![CDATA[mkdir ("dir",0777)]]></case>
+        <case assert="true"><![CDATA[chmod('file' ,0777)]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        Insecure permission settings
+        A permission of 0777 means that all permissions are open, that is, the attribute is: drwxrwxrwx (user-readable, writable and executable).
+
+        ## fix
+        Set the corresponding permissions and try to reduce the permissions to 0777.
+    </solution>
+    <status value="on"/>
+    <author name="H4rdy" email="with.h4rdy@gmail.com"/>
+</cobra>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="unsafe random number"/>
+    <language value="php"/>
+    <match mode="regex-only-match"><![CDATA[uniqid\s?\(]]></match>
+    <level value="2"/>
+    <test>
+        <case assert="true"><![CDATA[$uniq = uniqid();]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        The uniqid is generated based on the timestamp and belongs to a pseudo-random generator, so it is not recommended to use it.
+
+        ## fix
+        Use random instead
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="Certificate file leak"/>
+    <language value="certificate"/>
+    <match mode="find-extension"><![CDATA[]]></match>
+    <level value="4"/>
+    <solution>
+        ## Security Risk
+        The certificate file should not be placed in the git project
+
+        ## fix
+        delete
+    </solution>
+    <test>
+        <case assert="true"><![CDATA[]]></case>
+    </test>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

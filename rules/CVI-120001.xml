@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="SSRF caused by cURL"/>
+    <language value="php"/>
+    <match mode="regex-param-controllable"><![CDATA[curl_setopt\s*\(.*,\s*CURLOPT_URL\s*,(.*)\)]]></match>
+    <repair block="in-function"><![CDATA[curl_setopt\s?\(.*,\s?CURLOPT_PROTOCOLS\s?,(.*)\)]]></repair>
+    <level value="6"/>
+    <test>
+        <case assert="true"><![CDATA[
+            function curl($url){
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $url);
+                curl_setopt($ch, CURLOPT_HEADER, 0);
+                curl_exec($ch);
+                curl_close($ch);
+            }
+            $url = $_GET['url'];
+            curl($url);
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        SSRF vulnerability (Server-Side Request Forgery)
+
+        ### Formation principle
+        Most of the reasons for the formation of SSRF are that the server provides the function of obtaining data from other server applications and does not filter and restrict the target address.
+
+        ### Risk
+        1. An attacker can perform port scanning on the external network, the internal network where the server is located, or locally to obtain the banner information of the service.
+        2. Attack applications running on the intranet or local.
+        3. Fingerprint identification of intranet web applications.
+        4. Attack web applications of internal and external networks.
+        5. Use the file protocol to read local files, etc.
+
+        ### Example
+        ````php
+        function curl($url){
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_exec($ch);
+            curl_close($ch);
+        }
+        $url = $_GET['url'];
+        curl($url);
+        ````
+        The above code does not do any SSRF defense. Examples of risks are as follows:
+
+        ````
+        # Read any file using the file protocol
+        curl -v 'http://test.com:8082/ssrf.php?url=file:///etc/passwd'
+
+        # Use the dict protocol to view ports
+        curl -v 'http://test.com:8082/ssrf.php?url=dict://127.0.0.1:22'
+        ````
+
+        ## fix
+        1. Restrict the protocol to HTTP, HTTPS
+            ````
+            curl_setopt($ch, CURLOPT_PROTOCOLS, CURLPROTO_HTTP | CURLPROTO_HTTPS);
+            ````
+        2. Restrict request domain name whitelist
+        3. Prohibit 30x jumps
+            ````
+            delete curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+            ````
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

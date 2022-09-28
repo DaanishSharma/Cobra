@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="remote code execution"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[(array_map|create_function|call_user_func|call_user_func_array|assert|eval|dl|register_tick_function|register_shutdown_function|array_filter|array_reduce|array_diff_ukey|array_udiff|array_walk|array_walk_recursive|uasort|uksort|usort)]]></match>
+    <level value="10"/>
+    <test>
+        <case assert="true"><![CDATA[array_map($_GET['pass'],$array);]]></case>
+        <case assert="true"><![CDATA[create_function('$_GET['pass']',"echo $a");]]></case>
+        <case assert="true"><![CDATA[call_user_func($_GET['pass1'],$_GET['pass2']);]]></case>
+        <case assert="true"><![CDATA[call_user_func_array($_GET['pass1'],$array);]]></case>
+        <case assert="true"><![CDATA[assert($_GET['pass']);]]></case>
+        <case assert="true"><![CDATA[eval($_GET['pass']);]]></case>
+        <case assert="true"><![CDATA[dl($_GET['pass']);]]></case>
+        <case assert="true"><![CDATA[register_tick_function($_GET['pass']);]]></case>
+        <case assert="true"><![CDATA[register_shutdown_function($_GET['pass']);]]></case>
+        <case assert="true"><![CDATA[
+            $a = base64_decode($_POST['test']);
+            eval($a);
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        Code Injection
+        Inadequate filtering of user input parameters may lead to malicious code execution by attackers.
+        Therefore, dangerous functions should be avoided as much as possible in development.
+
+        ## fix
+        Disable the following dangerous functions
+        - array_map
+        - create_function
+        - call_user_func
+        - call_user_func_array
+        - assert
+        - eval
+        -dl
+        - register_tick_function
+        - register_shutdown_function
+        - preg_replace
+
+        ## example
+        <?php
+            $myvar = "varname";
+            $x = $_GET['arg'];
+            eval("\$myvar" = \$x;");
+        ?>
+        Submitting `/index.php?arg=1;phpinfo()` will cause code injection
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

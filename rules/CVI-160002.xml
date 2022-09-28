@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="Splicing SQL Injection"/>
+    <language value="php"/>
+    <match mode="regex-only-match"><![CDATA[(\"\s*(select|SELECT|insert|INSERT|update|UPDATE)\s*(([^;]\s*)*)?\$(.+?);?\")]]></match>
+    <level value="8"/>
+    <test>
+        <case assert="true"><![CDATA[$query  = "SELECT id, name FROM products ORDER BY name LIMIT 20 OFFSET $offset;";]]></case>
+        <case assert="false"><![CDATA[$query  = "SELECT id FROM products LIMIT 20 ;";]]></case>
+        <case assert="true"><![CDATA[$s = "select"  + $v + "from " + $tb + "where id = " + $id;]]></case>
+        <case assert="true"><![CDATA[
+            $query  = "SELECT id, name, inserted, size FROM products
+                    WHERE size = '$size'
+                    ORDER BY $order
+                    LIMIT $limit, $offset;";
+        ]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+
+        ### Causes of SQL Injection Vulnerabilities
+        SQL statement splicing, if the user-controllable parameters are not sufficiently filtered, it may lead to SQL injection
+
+        ### Risk
+        - User information has been tampered with
+        - Attackers steal code and user data
+        - Business operation data is maliciously obtained
+        - The online code is illegally tampered with and has the effect of delivering traffic or other benefits for malicious attackers
+
+        ## fix
+        - Functions that are no longer in use are directly processed offline
+        - Introduce security components
+        - Code layer repair: try not to splicing SQL statements. Strict filtering of user-controllable parameters if necessary
+
+        ## example
+        ````php
+        <?php
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password;";
+            mysql_query($query);
+        ?>
+        ```
+        若输入的数据为
+        ```php
+        $_POST['username'] = 'adan';
+        $_POST['password'] = '' OR ''='';
+        ```
+
+        SQL语句变为 `SELECT * FROM users WHERE user='adan' AND password='' OR ''=''` 发生SQL注入，攻击者无需密码即可登录。
+        尽量不要使用拼接的SQL语句。若不得不使用，尽量不要用户可控SQL语句的参数。
+        若必须用户可控，请对用户输入的参数进行严格的限制和过滤。
+    </solution>
+    <status value="off"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

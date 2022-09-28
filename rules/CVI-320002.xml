@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="extract causes variable coverage vulnerability"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[extract]]></match>
+    <repair mode="in-current-line"><![CDATA[extract\s*\(\s*\w*\s*,\s*(?:EXTR_SKIP|EXTR_PREFIX_SAME|EXTR_PREFIX_ALL|EXTR_PREFIX_IF_EXISTS|EXTR_IF_EXISTS)\s*[,\)]]]></repair>
+    <level value="4"/>
+    <test>
+         <case assert="true"><![CDATA[extract($_GET['var']);]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        Variable Override Vulnerability
+
+        ## fix
+        Fix the current line by flags (eg: use EXTR_SKIP when calling extract() to ensure that existing variables will not be overwritten)
+
+        ## example
+        ````php
+        <?php
+            $a = '0';
+            extract($_GET);
+            if($a==1){echo "true!";}
+            else{echo "false!";}
+        ?>
+        ````
+        When constructing http://www.test.com/test.php?a=1, it will print true
+
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

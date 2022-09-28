@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="file contains vulnerabilities"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[include|include_once|require|require_once|parsekit_compile_file|php_check_syntax|runkit_import|virtual]]></match>
+    <level value="7"/>
+    <test>
+        <case assert="true"><![CDATA[include($_GET['file']);]]></case>
+        <case assert="true"><![CDATA[require_once($_GET['file']);]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        LFI/FRI (local file inclusion/remote file inclusion)
+
+        ### Form
+        When importing a file, the referenced file name can be controlled by the user. If the incoming parameters do not restrict filtering or the verification is bypassed, accidental file leakage or even malicious code injection may occur.
+
+        ### Sphere of influence
+        When an attacker includes a specific file through this vulnerability, that file will execute the corresponding code.
+
+        ## fix
+        1. Try to avoid including dynamic variables, especially variables that the user can control.
+        2. Set whitelist (using enumeration)
+        ````php
+        <?php
+            $file = $_GET['file'];
+            //Whitelisting possible values
+            switch ($file) {
+                case 'main':
+                case 'foo':
+                case 'bar':
+                    include '/home/wwwroot/include/'.$file.'.php';
+                    break;
+                default:
+                    include '/home/wwwroot/include/main.php';
+            }
+        ?>
+        ```
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

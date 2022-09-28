@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="Assigned hardcoded password"/>
+    <language value="php"/>
+    <match mode="regex-only-match"><![CDATA[(?:private\s+|public\s+|protected\s+)?(?:static\s+)?\$\w*(?:passwd|password|pwd)\w*\s*(?:=|=>|->)\s*(?:md5\(|sha1\()?['"][^,]+?['"]]]></match>
+    <level value="2"/>
+    <test>
+        <case assert="true"><![CDATA[private $password = "test"]]></case>
+        <case assert="true"><![CDATA[private static $password = "test"]]></case>
+        <case assert="true"><![CDATA[public $pwd = "test"]]></case>
+        <case assert="true"><![CDATA[protected $passwd = 'test']]></case>
+        <case assert="true"><![CDATA[protected $except_password = md5("test")]]></case>
+        <case assert="true"><![CDATA[protected $password_except = sha1("test")]]></case>
+        <case assert="true"><![CDATA[$password = "test"]]></case>
+        <case assert="true"><![CDATA[$passwd = "test"]]></case>
+        <case assert="true"><![CDATA[$pwd = "test"]]></case>
+        <case assert="false"><![CDATA[$pwd = "";]]></case>
+    </test>
+    <solution>
+        ## Security Risk
+        hardcoded password
+
+        ## fix
+        Put the password extraction in the configuration file, and the configuration file is not placed in git
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>

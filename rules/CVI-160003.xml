@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cobra document="https://github.com/WhaleShark-Team/cobra">
+    <name value="MySQL Execute Functions"/>
+    <language value="php"/>
+    <match mode="function-param-controllable"><![CDATA[(mysql_query|mysql_db_query)]]></match>
+    <repair block="in-function"><![CDATA[(mysql_real_escape_string|addslashes)]]></repair>
+    <level value="8"/>
+    <test>
+        <case assert="true"><![CDATA[
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysql_query($query);
+        ]]></case>
+        <case assert="false"><![CDATA[
+            $username = "user";
+            $password = "cobra123";
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysql_query($query);
+        ]]></case>
+        <case assert="false"><![CDATA[
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $username = mysql_real_escape_string($username); //转义
+            $password = mysql_real_escape_string($password); //转义
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysql_query($query);
+        ]]></case>
+
+    </test>
+    <solution>
+        ## Security Risk
+
+        ### SQL injection causes
+        The SQL statement can be controlled by the user. If the parameters are not sufficiently filtered and the SQL statement is directly executed, SQL injection may occur.
+
+        ### Risk
+        - User information has been tampered with
+        - Attackers steal code and user data
+        - All data of business operations are maliciously obtained
+        - The online code is illegally tampered with and has the effect of delivering traffic or other benefits for malicious attackers
+
+        ## fix
+        - Functions that are no longer used can be processed directly offline
+        - Introduce security components
+        - Code layer fix: Strict filtering of user-controllable parameters
+            Use `mysql_real_escape_string` to escape special characters in strings used in SQL statements
+            If there is no escape function and use \ to escape special characters, you can use the addslashes function
+
+        ## code example
+        ````
+        <?php
+            $username = $_POST['username'];
+            $password = $_POST['username'];
+            $username = mysql_real_escape_string($username); //转义
+            $password = mysql_real_escape_string($password); //转义
+            $query = "SELECT * FROM users WHERE user = $username AND password = $password ";
+            mysql_query($query);
+        ?>
+        ```
+    </solution>
+    <status value="on"/>
+    <author name="Feei" email="feei@feei.cn"/>
+</cobra>
